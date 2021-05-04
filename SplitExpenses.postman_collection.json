@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "3b543735-f845-4b87-ab00-6a678bc551ec",
+		"name": "SplitExpenses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addFriend",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nombre1\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/SplitExpense/friend",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SplitExpense",
+						"friend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/SplitExpense/balance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SplitExpense",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCashFlows",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/SplitExpense/cashFlows",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SplitExpense",
+						"cashFlows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/SplitExpense/friend/:name/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SplitExpense",
+						"friend",
+						":name",
+						"payment"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
